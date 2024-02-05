@@ -14,7 +14,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -22,22 +22,40 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="navbar">
-				<div class="left_nav">
-					<div class="logo_img">
-						<img src="img/favicon/Logo.svg" alt="">
-					</div>
-					<nav>
-						<ul>
-							<li><a href="#" class="nav_link">Shop</a></li>
-							<li><a href="#" class="nav_link">About</a></li>
-							<li><a href="#" class="nav_link">Sustainability</a></li>
+			<nav class="header">
+				<div class="container">
+					<div class="header__wrap">
+						<div class="hamb">
+							<div class="hamb__field" id="hamb">
+								<span class="bar"></span> <span class="bar"></span>
+								<span class="bar"></span>
+							</div>
+						</div>
+						<a href="#" class="logo" id="logo"><img src="./img/favicon/Logo.svg" alt=""></a>
+						<ul class="menu" id="menu">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Pages</a></li>
+		
 						</ul>
-					</nav>
+						<div class="head_right flex">
+							<a href="#" class="searh_img">
+								<img src="./img/favicon/search.svg" alt="">
+							</a>
+							<div class="imgh">
+								<img src="./img/favicon/bag.svg" alt="">
+								<a href="#" class="tb">O</a>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="right_nav"></div>
-			</div>
-		</div>
+			</nav>
+			<div class="popup open" id="popup"><ul class="menu" id="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Pages</a></li>
+
+			</ul></div>		</div>
 	</header>
 
 	<section class="">
@@ -52,7 +70,6 @@
 		</div>
 	</footer>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="js/core.js"></script>
 
 </body>
